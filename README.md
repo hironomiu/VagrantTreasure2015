@@ -1,41 +1,40 @@
 Treasure環境
 ===================================
 
-## 環境構成
-### Provision 
-Puppet
-## Set Up 
-### git clone
+# Install
 ```
-$ git clone git@github.com:hironomiu/VagrantTechTrain.git
+$ git clone git@github.com:hironomiu/VagrantTreasure2015.git
 or
-$ git clone https://github.com/hironomiu/VagrantTechTrain.git 
+$ git clone https://github.com/hironomiu/VagrantTreasure2015.git 
 ```
-### 起動
-
-- 起動
+# Start UP
 
 ```
-$ cd VagrantTechTrain  
-$ vagrant up  
+$ cd VagrantTreasure2015  
+$ vagrant up
 ```
 
-## Login
-### techtrain
+# Login
+## demouser
 ```
-$ ssh techtrain@192.168.56.120
+$ ssh demouser@192.168.56.230
 ```
-### vagrant
+## vagrant
 ```
 $ vagrant ssh
 ```
-## users
+# Users
 
 | OS user | pass | 接続DB | 接続Port |  DB user |  DB pass | 用途 |
 |:-----------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|
 | root | - | - | 3306 |  root | vagrant | root vagrantユーザより sudo su -にて遷移|
 | vagrant | - | - | - | - | - | vagrant用ユーザ vagrant sshにてログイン|
-| techtrain | techtrain | techtrain | 3306 | techtrain | techtrain | 開発ユーザ |
+| demouser | demouser | demouser | 3306 | demouser | demouser | 開発ユーザ |
+| group-a | group-a | group_a | 3306 | group_a | group_a | 開発ユーザ |
+| group-b | group-b | group_b | 3306 | group_b | group_b | 開発ユーザ |
+| group-c | group-c | group_c | 3306 | group_c | group_c | 開発ユーザ |
+| group-d | group-d | group_d | 3306 | group_d | group_d | 開発ユーザ |
+| group-e | group-e | group_e | 3306 | group_e | group_e | 開発ユーザ |
 
 ## Packages   
 ### MySQL
@@ -54,4 +53,4 @@ $ vagrant ssh
 - DocumentRootは適時設定すること
 
 ### PHP
-- 5.4
+- 5.6
