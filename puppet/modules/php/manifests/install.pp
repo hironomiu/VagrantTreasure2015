@@ -23,6 +23,7 @@ class php::install{
         'php-common',
         'php-devel',
         'php-pdo',
+        'php-xml',
         'php-mbstring',
         'php-mysqlnd',
         'openssh-clients',
